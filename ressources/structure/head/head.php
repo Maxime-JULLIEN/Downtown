@@ -14,5 +14,6 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="/ressources/js/jquery.lazyload.js"></script>
 	<link rel="stylesheet" href="/ressources/css/style.css">
+    <link rel="stylesheet" href="styles.css">
 	<script src="/ressources/js/script.js"></script>
 </head>

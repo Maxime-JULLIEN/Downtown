@@ -4,7 +4,7 @@
 	include '/ressources/structure/entete/entete.php';
 	include '/ressources/structure/menu/menu.php';
 ?>
-	<main class="mdl-layout__content mdl-color--grey-100">
+	<main class=" mdl-layout__content mdl-color--grey-100">
 		<div class="page-content mdl-grid" id="output">
 			
 			<script type="text/javascript">
@@ -27,7 +27,6 @@ getPage("Accueil");
 });			
 			</script>
 			
-			<div> </div>
 		</div>
 	</main>
 		<?php include("/ressources/hoover_button/hoover_button.php");  ?>
