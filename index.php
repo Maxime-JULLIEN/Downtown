@@ -1,8 +1,8 @@
 <?php
-	require_once "/bbd_connect.php" ;
-	include '/ressources/structure/head/head.php';
-	include '/ressources/structure/entete/entete.php';
-	include '/ressources/structure/menu/menu.php';
+	require_once "ressources/bdd/bbd_connect.php" ;
+	include 'ressources/structure/head/head.php';
+	include 'ressources/structure/entete/entete.php';
+	include 'ressources/structure/menu/menu.php';
 ?>
 	<main class=" mdl-layout__content mdl-color--grey-100">
 		<div class="page-content mdl-grid" id="output">
@@ -29,7 +29,7 @@ getPage("Accueil");
 			
 		</div>
 	</main>
-		<?php include("/ressources/hoover_button/hoover_button.php");  ?>
+		<?php include("ressources/hoover_button/hoover_button.php");  ?>
 	</div>
 	</body>
 

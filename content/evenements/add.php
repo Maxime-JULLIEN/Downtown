@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/bbd_connect.php';
+include 'ressources/bdd/bbd_connect.php';
 if(isset($_POST['Titre']) && isset($_POST['Lieu'])&& isset($_POST['Description'])) {
     if(($_POST['Titre'] !== '') && ($_POST['Lieu'] !== '')&& ($_POST['Description'] !== '')) {
 				$Titre = $_POST['Titre'];

@@ -28,7 +28,7 @@ $data->closeCursor();
 <script type="text/javascript">
 				function getDialog(Page) {
 					jQuery.ajax({
-						url: "/content/"+Page+"/dialog.php"
+						url: "content/"+Page+"/dialog.php"
 						, success: function (data) {
 							$('#dialog').html(data);
 							componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS

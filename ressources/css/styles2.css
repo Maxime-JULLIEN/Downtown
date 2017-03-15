@@ -68,6 +68,7 @@ html, body {
 }
 .mdl-demo .mdl-card > * {
   height: auto;
+	width: auto;
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text {
   margin: 40px;

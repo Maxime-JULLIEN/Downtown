@@ -3,7 +3,7 @@
 // Connexion à la base de données
 try
 {
-    $bdd = new PDO('mysql:host=127.0.0.1;dbname=downtown;charset=utf8', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=id788811_downtow;charset=utf8', 'id788811_root', 'downtown');
 }
 catch(Exception $e)
 {

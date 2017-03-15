@@ -1,5 +1,5 @@
 <?php
-	require "/bbd_connect.php" ;
+	require "ressources/bdd/bbd_connect.php" ;
 $ask = $_REQUEST['Name'];
 $pages = $bdd->query("SELECT * FROM link WHERE Name = '".$ask."'");
 $result = $pages->fetch();

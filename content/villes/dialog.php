@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/bbd_connect.php';
+require '../../ressources/bdd/bbd_connect.php';
 $ID = $_REQUEST['ID'];
 $pages = $bdd->query("SELECT * FROM hoover_button WHERE ID = '".$ID."'");
 $result = $pages->fetch();

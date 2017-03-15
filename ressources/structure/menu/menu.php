@@ -17,5 +17,10 @@
 								?>
 		
 		</nav>
-
+<script>
+	    $(".mdl-navigation__link").click(function(){
+        $(".mdl-layout__drawer").removeClass("is-visible");
+		$(".mdl-layout__obfuscator").removeClass("is-visible");
+    });	
+</script>
 	</div>

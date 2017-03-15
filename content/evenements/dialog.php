@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'].'/bbd_connect.php';
+require '../../ressources/bdd/bbd_connect.php';
 ?>
 <!-- The Modal -->
 <div id="myModal" class="modal">
