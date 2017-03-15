@@ -5,9 +5,7 @@
 	include 'ressources/structure/menu/menu.php';
 ?>
 	<main class=" mdl-layout__content mdl-color--grey-100">
-		<div class="page-content mdl-grid" id="output">
-			
-			<script type="text/javascript">
+		<script type="text/javascript">
 				function getPage(Name) {
 					jQuery.ajax({
 						url: "get_page.php"
@@ -15,6 +13,7 @@
 						, type: "POST"
 						, success: function (data) {
 							$('#output').html(data);
+							$("div.lazy").lazyload({effect : "fadeIn"});
 							componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS
 						}
 						
@@ -25,7 +24,12 @@
 $(function() {
 getPage("Accueil");
 });			
+
 			</script>
+		
+		<div class="page-content mdl-grid" id="output">
+			
+			
 			
 		</div>
 	</main>

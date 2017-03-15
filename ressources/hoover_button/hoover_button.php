@@ -10,7 +10,7 @@ while ($donnees = $data->fetch())
 	$Page = $donnees['Page'];
 	$Icon = $donnees['Icon'];
 	echo'
-		<button id="show-dialog'.$ID.'" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--primary mdl-color-text--white button" onClick="getDialog(\''.$Page.'\');" ><i class="material-icons">'.$Icon.'</i></button>
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--primary mdl-color-text--white button" onClick="getDialog(\''.$Page.'\');" ><i class="material-icons">'.$Icon.'</i></button>
 		<div class=" mdl-tooltip--left	mdl-tooltip" data-mdl-for="show-dialog'.$ID.'">'.$Name.'</div>
 		
 ';
@@ -21,11 +21,12 @@ $data->closeCursor();
 
 				
 </div>
-	<button id="show-dialog" class="mdl-button mdl-js-button mdl-button--fab mdl-color--accent mdl-color--primary mdl-color-text--white"> <i class="material-icons">add</i> </button>
+	<button class="mdl-button mdl-js-button mdl-button--fab mdl-color--accent mdl-color--primary mdl-color-text--white"> <i class="material-icons">add</i> </button>
 </div>
 <div id="dialog"></div>
 
 <script type="text/javascript">
+
 				function getDialog(Page) {
 					jQuery.ajax({
 						url: "content/"+Page+"/dialog.php"
@@ -35,6 +36,6 @@ $data->closeCursor();
 						}
 						
 					});
-					
 				}
+	
 			</script>

@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="/ressources/js/jquery.lazyload.js"></script>
+	<script src="ressources/js/jquery.lazyload.js"></script>
 	<link rel="stylesheet" href="ressources/css/style.css">
 	<script src="ressources/js/script.js"></script>
 </head>
