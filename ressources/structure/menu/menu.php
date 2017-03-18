@@ -11,7 +11,7 @@
 								while ($donnees = $categories->fetch())
 									{
 										$Name = $donnees['Name'];
-										echo '<a class="mdl-navigation__link" onClick="getPage(\''.$Name.'\');">'.$Name.'</a> ';
+										echo '<a class="mdl-navigation__link" onClick="getPage(\''.$Name.'\');" >'.$Name.' </a> '."\n";
 									}
 							$categories->closeCursor(); 
 								?>

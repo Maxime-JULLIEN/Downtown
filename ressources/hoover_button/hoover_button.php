@@ -10,7 +10,7 @@ while ($donnees = $data->fetch())
 	$Page = $donnees['Page'];
 	$Icon = $donnees['Icon'];
 	echo'
-		<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--primary mdl-color-text--white button" onClick="getDialog(\''.$Page.'\');" ><i class="material-icons">'.$Icon.'</i></button>
+		<button id="show-dialog'.$ID.'" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--primary mdl-color-text--white button" onClick="getDialog(\''.$Page.'\');" ><i class="material-icons">'.$Icon.'</i></button>
 		<div class=" mdl-tooltip--left	mdl-tooltip" data-mdl-for="show-dialog'.$ID.'">'.$Name.'</div>
 		
 ';
