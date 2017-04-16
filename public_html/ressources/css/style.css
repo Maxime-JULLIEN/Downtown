@@ -1,0 +1,386 @@
+.page-content {
+	max-width: 1080px;
+}
+
+.disabled {
+	pointer-events: none;
+	opacity: 0.4;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+}
+
+.bottom-right {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 23px;
+	padding-right: 23px;
+	z-index: 4;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.mdl-button--fab {
+	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.mdl-button--fab:hover {
+	box-shadow: 0 0 8px rgba(243, 197, 197, 0.18), 0 8px 16px rgba(0, 0, 0, .36);
+}
+
+.mdl-color--primary {
+	background-color: rgb(2, 149, 170) !important;
+}
+
+.mdl-color--accent {
+	background-color: rgb(240, 53, 61) !important;
+}
+
+.mdl-color-text--primary {
+	color: rgb(63, 81, 181) !important;
+}
+
+.mdl-color-text--accent {
+	color: rgb(240, 53, 61) !important;
+}
+
+.mdl-layout-title--menu {
+	position: relative;
+	height: 160px;
+}
+
+.mdl-layout__drawer>.mdl-layout-title {
+	padding-left: initial;
+}
+
+.logo-menu {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 20px;
+}
+
+.mdl-drawer-separator {
+	/* séparateur dans le menu de gauche */
+	height: 1px;
+	background-color: #dcdcdc;
+	margin: 8px 0;
+}
+
+.button-menu {
+	display: none;
+	flex-direction: column;
+	margin-bottom: 8px
+}
+
+.button {
+	margin: 8px;
+}
+
+.bottom-right:hover > .button-menu {
+	display: flex;
+}
+
+.mdl-layout__content {
+	overflow-y: scroll;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+	display: block;
+	/* Hidden by default */
+	position: fixed;
+	z-index: 6;
+	/* Sit on top */
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	height: 80%;
+    overflow:auto;
+}
+
+
+/* The Close Button */
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.sbtn {
+	background-color: #333;
+	border: 1px solid #000033;
+	height: 22px;
+	width: 82px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-position: center;
+	padding: 0px;
+	margin: 20px 20px 20px 20px;
+	cursor: pointer;
+}
+
+.sbtn:hover {
+	background-color: #000;
+}
+
+form {
+	margin: 10px 5px 0px 5px;
+}
+
+label {
+	padding: 0px;
+	text-align: center;
+}
+
+.sucess-msg {
+	text-align: left;
+	color: #34A853;
+	background-repeat: no-repeat;
+	margin: 0 30px 0 30px;
+	padding: 5px 5px 30px 5px;
+}
+
+.error-msg {
+	text-align: left;
+	margin: 0 30px 0 30px;
+	color: #EA4335;
+	background-repeat: no-repeat;
+	padding: 5px;
+	padding-left: 30px;
+}
+
+.uploadProcess {
+	z-index: 100;
+	visibility: hidden;
+	position: absolute;
+	text-align: center;
+	width: 400px;
+}
+
+.mdl-card-picture {
+	background: center center #eeeeee;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1240px) {
+	.mdl-layout__drawer {
+		width: 220px
+	}
+	.mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen)>.mdl-layout__header {
+		margin-left: 220px;
+		width: calc(100% - 220px);
+	}
+	.mdl-layout--fixed-drawer>.mdl-layout__content {
+		margin-left: 220px;
+	}
+}
+
+/Ville statique, par Solène et Thomas/
+/Première carte d’événement/
+.eventasso{
+    background-color: lightgrey;
+    height: 115px;
+    width :500px;
+    text-align:center;
+}
+/Deuxième carte d’événement/
+.petitevent{
+    margin-top: 20px;
+    background-color: lightgrey;
+    height: 115px;
+    width :500px;
+    text-align:center;
+}
+
+.image{
+   width: 100%;
+   position: center; 
+   background-image:url('../../content/villes/Bourges/presentation.jpg');
+}
+
+.imgevent{
+   width: 108px;
+   height: 108px;
+   background-size: cover;
+   background-image:url('../../content/villes/Bourges/Cupcakes.jpg');
+   position: relative; 
+   top: -5px;
+}
+/Carte d’événement lié/
+  .titrevent{
+     font-size:25px;
+     color: #000000;
+     font-family: "Times New Roman";
+     text-shadow: 0px 0px 6px #000000;
+  }
+  .infog{
+     font-size:14px;
+     color: #F2F2F2;
+     position: relative; 
+     top: -10px;
+     left: -35%;
+  }
+  .infob{
+     overflow-y: scroll;
+     height: 70px;
+     font-size:14px;
+     position: relative; 
+     top: -15px;
+  }
+
+.h2bis {
+   margin-left: 1%;
+   top: -31px; 
+   position: relative;
+   font-size: 60px;
+   color: #0295AA;
+}
+
+
+.imgville{
+    background-image:url('../../content/villes/Bourges/presentation.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;    
+    filter: brightness(50%);
+     -webkit-filter: brightness(50%);
+     -moz-filter: brightness(50%);
+     -o-filter: brightness(50%);
+     -ms-filter: brightness(50%);
+}
+
+.description{
+    border-left: 4px solid #0295AA;
+    background-color: lightgrey;
+    height: 250px;
+    text-align:justify;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+
+
+  blockquote:before {
+    content: none; 
+}
+  blockquote:after {
+    content: none;
+}
+
+.pullquote {
+    font-family: "Roboto Mono",Roboto,sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,.55);
+    line-height: 1.6666666667;
+    margin: 3em 0;
+}
+
+.pullquote {
+    border-left: 5px solid;
+    color: #36a1ea;
+    padding-left: 1.5em;
+}
+ .pullquote {
+    color: #0ea375 !important;
+}
+
+
+.pullquote p {
+    quotes: "“" "”" "‘" "’";
+    position: relative;
+	  margin: 0 0 1.5em;
+    padding: 0;
+	    font-size: 24px !important;
+    font-weight: 400;
+    line-height: 1.6666666667;
+	    font-style: normal;
+
+}
+
+
+.pullquote cite {
+    display: inline-block;
+    font-style: normal; 
+	    font-size: 16px;
+	    letter-spacing:normal;
+}
+
+.loader{
+	display: none;
+	height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.retour{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+     z-index:1;
+}
+
+.mdl-button--fab.mdl-button--mini-fab {
+    color: black;
+   background:  rgba(255, 255, 255, 0.5);
+	transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    cursor: pointer;
+}
+
+.mdl-card__actions{
+	cursor: pointer;
+}

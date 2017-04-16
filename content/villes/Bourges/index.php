@@ -1,20 +1,19 @@
-<div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >
-    <div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >
-        
-      <div class="image">
-        <div class="imgville">
-          <div class="h2bis">  Bourges </div>
+<div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >        
+       
+    <div class="image">       
+    <div class="imgville">
+         
+        </div> <div class="h2bis">  Bourges </div>
         </div>
 
-      </div>   
         
     <div class="mdl-grid">
         
-        <div class="mdl-cell mdl-cell--5-col">
+        <div class="mdl-cell mdl-cell--6-col">
             
             <div class="description">
                     
-            Bourges est une commune française, préfecture du département du Cher. Avec 66 528 habitants, c'est la commune la plus peuplée du département.
+            Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test. Je suis un test.v
                 
             </div>
             
@@ -22,14 +21,17 @@
         
         <div class="mdl-cell mdl-cell--6-col">
             
-            <div class="align">
+            <div class="eventasso">
                 
-            Evenements dans la ville Bourges
+            Événements dans la ville Bourges
+                
+            </div>
+            <div class="petitevent">
+                
+            Je sais pas qui je suis
                 
             </div>
             
         </div>
-        
-    </div>
 
 </div>

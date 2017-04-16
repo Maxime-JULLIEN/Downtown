@@ -30,6 +30,10 @@ $data->closeCursor();
 				function getDialog(Page) {
 					jQuery.ajax({
 						url: "content/"+Page+"/dialog.php"
+						,beforeSend: function() {
+								$('#output').hide();
+								$(".loader").show();
+							}
 						, success: function (data) {
 							$('#dialog').html(data);
 							componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS

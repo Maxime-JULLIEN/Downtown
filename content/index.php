@@ -1,9 +1,24 @@
 <div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+		<div style="width:100%; display: flex; justify-content : center;">
+<div style="width:760px">
+	<blockquote class="pullquote">
+<p>With this elegant system, the user can launch the app and glimpse the health and activity of the Stock Market without reading a single word.</p>
+<cite>Zane Bevan, Creative Director, Robinhood</cite>
+	</blockquote>
 	
+		<blockquote class="pullquote">
+<p>With this elegant system, the user can launch the app and glimpse the health and activity of the Stock Market without reading a single word.</p>
+<cite>Zane Bevan, Creative Director, Robinhood</cite>
+	</blockquote>
 	
-	
-
+		<blockquote class="pullquote">
+<p>With this elegant system, the user can launch the app and glimpse the health and activity of the Stock Market without reading a single word.</p>
+<cite>Zane Bevan, Creative Director, Robinhood</cite>
+	</blockquote>
+</div>
+</div>
 
 </div> 
 

@@ -11,3 +11,26 @@
 					</div>
 				</div>
 			</header>
+			
+			<script>
+			
+							function Search(Data) {
+					jQuery.ajax({
+						url: "ressources/search/index.php"
+						, data: Data=' + Data
+						, type: "POST"
+						,beforeSend: function() {
+								$('#output').hide();
+								$(".loader").show();
+							}
+						, success: function (data) {
+							$(".loader").hide();
+							$('#output').show();
+							$('#output').html(data);
+							$("div.lazy").lazyload({effect : "fadeIn"});
+							componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS
+						}
+						
+					});
+			
+			</script>

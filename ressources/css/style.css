@@ -208,7 +208,7 @@ label {
 }
 
 .mdl-card-picture {
-	background: center center #324a5e;
+	background: center center #eeeeee;
 	background-size: cover;
 }
 
@@ -225,35 +225,123 @@ label {
 	}
 }
 
-.align{
+.petitevent{
+    margin-top: 20px;
+    border-left: 4px solid #0295AA;
+    background-color: lightgrey;
+    height: 115px;
+    width :500px;
     text-align:center;
 }
 
-.image { 
-    width: 100%;
-    position: center; 
+.eventasso{
+    border-left: 4px solid #0295AA;
+    background-color: lightgrey;
+    height: 115px;
+    width :500px;
+    text-align:center;
 }
-.h2bis { 
-   text-align: center;  
-   top: 85%; 
+}
+
+.image{
+   width: 100%;
+   position: center; 
+
+
+}
+
+.h2bis {
+   margin-left: 1%;
+   top: -35px; 
    position: relative;
-   height: 50%;
    font-size: 60px;
+   color: #0295AA;
 }
 
 
 .imgville{
     background-image:url('../../content/villes/Bourges/presentation.jpg');
-    background-position: center center;
-    height: 400px;
-    border: 2px grey dashed;
-    border-radius: 10px;
-    border-bottom;
-
+    background-size: cover;
+    background-position: center;
+    height: 400px;    
+    filter: grayscale(75%);
+    webkit-filter: grayscale(50%);
+    moz-filter: grayscale(50%);
+    o-filter: grayscale(50%);
+    ms-filter: grayscale(50%);
+    border-bottom: 13px solid #00DEFF;
 }
 
 .description{
-    border-left: 4px solid #007f80;
+    border-left: 4px solid #0295AA;
     background-color: lightgrey;
+    height: 250px;
     text-align:center;
+    overflow-y: scroll;
+}
+
+
+
+  blockquote:before {
+    content: none; 
+}
+  blockquote:after {
+    content: none;
+}
+
+.pullquote {
+    font-family: "Roboto Mono",Roboto,sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,.55);
+    line-height: 1.6666666667;
+    margin: 3em 0;
+}
+
+.pullquote {
+    border-left: 5px solid;
+    color: #36a1ea;
+    padding-left: 1.5em;
+}
+ .pullquote {
+    color: #0ea375 !important;
+}
+
+
+.pullquote p {
+    quotes: "“" "”" "‘" "’";
+    position: relative;
+	  margin: 0 0 1.5em;
+    padding: 0;
+	    font-size: 24px !important;
+    font-weight: 400;
+    line-height: 1.6666666667;
+	    font-style: normal;
+
+}
+
+
+.pullquote cite {
+    display: inline-block;
+    font-style: normal; 
+	    font-size: 16px;
+	    letter-spacing:normal;
+}
+
+.loader{
+	display: none;
+	height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.retour{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+     z-index:1;
+}
+
+.mdl-button--fab.mdl-button--mini-fab {
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
 }
