@@ -1,6 +1,6 @@
 <div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >
     <div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col box " >
-   <div class="retour"  onClick="getPage('Villes','');" >
+   <div class="retour"  onClick="getPage('Restaurants','');" >
 	<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
 <i class="material-icons">&#xE317;</i>
 	</button>

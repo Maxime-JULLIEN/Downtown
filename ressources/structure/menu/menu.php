@@ -1,10 +1,25 @@
-<div class="mdl-layout__drawer"> 
-	<span class="mdl-layout-title mdl-layout-title--menu">
+<div class="mdl-layout__drawer"> <span class="mdl-layout-title mdl-layout-title--menu">
 		<img class="logo-menu" src="/ressources/img/target.png">
 	</span>
-	<div class="mdl-drawer-separator"></div>
-	<nav class="mdl-navigation">
+	<?php
 
+if (isset($_SESSION['id']) AND isset($_SESSION['login'])){ 
+	echo ('<style>.unconnected{display:none;}</style>');
+} 
+	else
+	{
+		echo ('<style>.connected{display:none;}</style>');
+	}
+	?>
+
+		<a class="mdl-navigation__link unconnected mdl-typography--text-center" onClick="getPage('Identification','');">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Se connecter</button>
+		</a>
+		<a class="mdl-navigation__link connected mdl-typography--text-center" onClick="getPage('Espace membre','');">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Espace membre</button>
+		</a>
+		<div class="mdl-drawer-separator"></div>
+		<nav class="mdl-navigation">
 			<?php
 				$categories = $bdd->query('SELECT * FROM link ORDER BY ID ASC');
 
@@ -15,12 +30,12 @@
 									}
 							$categories->closeCursor(); 
 								?>
-		<a class="mdl-navigation__link" onClick=' jQuery.ajax({ url: "content/villes/Bourges/index.php" , success: function (data) { $("#output").html(data); $("div.lazy").lazyload({effect : "fadeIn"}); componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); }});'>Afficher Ville statique</a> 
+			
+				<div class="center">
+					<div class="bottom connected" onClick="getPage('Deconnexion','');">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Se déconnecter</button>
+					</div>
+				</div>
 		</nav>
-<script>
-	    $(".mdl-navigation__link").click(function(){
-        $(".mdl-layout__drawer").removeClass("is-visible");
-		$(".mdl-layout__obfuscator").removeClass("is-visible");
-    });	
-</script>
-	</div>
+
+</div>

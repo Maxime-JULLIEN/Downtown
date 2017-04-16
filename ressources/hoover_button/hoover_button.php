@@ -1,4 +1,4 @@
-<div class="bottom-right">
+
 	<div class="button-menu">
 		
 		<?php 
@@ -22,24 +22,37 @@ $data->closeCursor();
 				
 </div>
 	<button class="mdl-button mdl-js-button mdl-button--fab mdl-color--accent mdl-color--primary mdl-color-text--white"> <i class="material-icons">add</i> </button>
-</div>
-<div id="dialog"></div>
+
 
 <script type="text/javascript">
 
 				function getDialog(Page) {
 					jQuery.ajax({
-						url: "content/"+Page+"/dialog.php"
+						url: "get_page.php"
+						, data: 'Name=Dialog&Data1=' + Page
+						, type: "POST"
 						,beforeSend: function() {
-								$('#output').hide();
-								$(".loader").show();
+								$("#dialog").show();
 							}
 						, success: function (data) {
-							$('#dialog').html(data);
-							componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS
+							$('#modal-content').html(data);
+						componentHandler.upgradeAllRegistered("https://code.getmdl.io/1.2.1/material.min.js"); //recharger le JS
 						}
 						
 					});
-				}
+				};
+	
+	
+	$(document).on('click','.close',function(){
+	$('#modal-content').empty();
+	$("#dialog").hide();
+});
+
+$(window).click(function(e) {   
+	if (e.target.className == "modal") {
+	$('#modal-content').empty();
+	$("#dialog").hide();
+    }
+});
 	
 			</script>

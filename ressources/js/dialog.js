@@ -34,19 +34,10 @@ function SendForm(data){
                 }
             });
         }
-    }
+    };
 	
 	
 
-	$(document).on('click','.close',function(){
-	$('#myModal').remove();
-});
-
-$(window).click(function(e) {   
-	if (e.target.className == "modal") {
-	$('#myModal').remove();
-    }
-});
 
 
 

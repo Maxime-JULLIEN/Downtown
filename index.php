@@ -1,4 +1,5 @@
 <?php
+session_start();
 	require_once "ressources/bdd/bbd_connect.php" ;
 	include 'ressources/structure/head/head.php';
 	include 'ressources/structure/entete/entete.php';
@@ -38,8 +39,31 @@ getPage("Accueil","");
 			
 			
 		</div>
+		
+<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+		
+		
 	</main>
-		<?php include("ressources/hoover_button/hoover_button.php");  ?>
+<div id="hoover_button" class="bottom-right" >
+		<?php if (isset($_SESSION['IP'])) {
+    if ($_SESSION['IP'] == $_SERVER['REMOTE_ADDR']) {
+	include("ressources/hoover_button/hoover_button.php"); 
+		}
+    } 
+	?>
+</div>
+
+<div id="dialog" style="display:none;">
+<div id="myModal" class="modal">
+  <div id="modal-content" class="modal-content">
+	</div>
+	</div>
+</div>
+
 	</div>
 	</body>
 

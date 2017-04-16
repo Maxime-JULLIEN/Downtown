@@ -71,6 +71,7 @@
 	margin-right: auto;
 	margin-bottom: auto;
 	margin-top: 20px;
+	padding-left: 20px;
 }
 
 .mdl-drawer-separator {
@@ -199,7 +200,7 @@ label {
 	padding-left: 30px;
 }
 
-#uploadProcess {
+.uploadProcess {
 	z-index: 100;
 	visibility: hidden;
 	position: absolute;
@@ -226,33 +227,77 @@ label {
 }
 
 .petitevent{
-    margin-top: 20px;
-    border-left: 4px solid #0295AA;
+    margin-top: 10px;
     background-color: lightgrey;
     height: 115px;
     width :500px;
     text-align:center;
 }
 
-.eventasso{
-    border-left: 4px solid #0295AA;
+.eventshow{
     background-color: lightgrey;
-    height: 115px;
-    width :500px;
+    height: 300px;
+    width :550px;
     text-align:center;
+    margin: 10px 10px 0px 0px;
 }
+
+.imga{
+     background-size: cover;
+     background-image:url('../../content/evenements/event.jpg');
+     width: 550px;
+     height: 100px; 
+} 
+
+.titrea{
+     font-size: 35px;
+     font-family: Arial Black;
+     position: relative; 
+     top: -24px;
 }
 
 .image{
    width: 100%;
    position: center; 
-
-
 }
+
+.imgevent{
+   width: 108px;
+   height: 108px;
+   background-size: cover;
+   background-image:url('../../content/villes/Bourges/Cupcakes.jpg');
+   position: relative; 
+   top: -5px;
+}
+
+  .titrevent{
+     font-size:25px;
+     color: #000000;
+     font-family: "Times New Roman";
+     text-shadow: 0px 0px 6px #000000;
+     position: relative; 
+  }
+  .infog{
+     font-size:14px;
+     color: #F2F2F2;
+     position: relative; 
+     width: 375px;
+     height: 20px;
+     top: -10px;
+     left: -35%;
+  }
+  .infob{
+     overflow-y: scroll;
+     height: 70px;
+     width: 375px;
+     font-size:14px;
+     position: relative; 
+     top: -15px;
+  }
 
 .h2bis {
    margin-left: 1%;
-   top: -35px; 
+   top: -31px; 
    position: relative;
    font-size: 60px;
    color: #0295AA;
@@ -264,20 +309,20 @@ label {
     background-size: cover;
     background-position: center;
     height: 400px;    
-    filter: grayscale(75%);
-    webkit-filter: grayscale(50%);
-    moz-filter: grayscale(50%);
-    o-filter: grayscale(50%);
-    ms-filter: grayscale(50%);
-    border-bottom: 13px solid #00DEFF;
+    filter: brightness(50%);
+     -webkit-filter: brightness(50%);
+     -moz-filter: brightness(50%);
+     -o-filter: brightness(50%);
+     -ms-filter: brightness(50%);
 }
 
 .description{
     border-left: 4px solid #0295AA;
     background-color: lightgrey;
     height: 250px;
-    text-align:center;
+    text-align:justify;
     overflow-y: scroll;
+    padding: 5px;
 }
 
 
@@ -343,5 +388,30 @@ label {
 
 .mdl-button--fab.mdl-button--mini-fab {
     color: black;
-    background: rgba(255, 255, 255, 0.5);
+   background:  rgba(255, 255, 255, 0.5);
+	transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    cursor: pointer;
+}
+
+.mdl-card__actions{
+	cursor: pointer;
+}
+
+.container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.mdl-button--mini-fab:hover {
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: white;
 }

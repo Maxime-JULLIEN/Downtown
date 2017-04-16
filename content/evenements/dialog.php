@@ -1,11 +1,7 @@
 <?php
-require '../../ressources/bdd/bbd_connect.php';
+require 'ressources/bdd/bbd_connect.php';
 ?>
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
     <span class="close">&times;</span>
     <h3>Ajouter un évenement</h3>
 	  
@@ -34,9 +30,6 @@ require '../../ressources/bdd/bbd_connect.php';
 <button type="submit" id="envoyer" value="Envoyer" class="mdl-button mdl-js-button mdl-button--primary">Envoyer</button>
 </form>
 
-  </div>
-
-</div>
 
 
 <script src="/ressources/js/dialog.js"></script>
